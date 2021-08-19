@@ -1,4 +1,4 @@
-package nube.tp.pagos.domains;
+package nube.tp.clientes.domains;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

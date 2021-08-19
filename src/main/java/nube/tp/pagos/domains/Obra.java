@@ -1,7 +1,9 @@
-package nube.tp.pagos.domains;
+package nube.tp.clientes.domains;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -28,6 +30,9 @@ public class Obra {
 
 	@Column()
 	public Integer superficie;
+
+	@Enumerated(EnumType.STRING)
+	public TipoObra tipo;
 
 	@Override
 	public String toString() {
