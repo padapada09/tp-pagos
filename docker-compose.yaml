@@ -1,0 +1,11 @@
+version: "3.5"
+
+services:
+  java: 
+    build: .
+    ports: 
+      - 9004:8080
+    volumes:
+      - ./src:/usr/src/tp/src
+      - ./pom.xml:/usr/src/tp/pom.xml
+      - ./HELP.md:/usr/src/tp/HELP.md
