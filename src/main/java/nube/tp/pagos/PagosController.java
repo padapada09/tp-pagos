@@ -3,6 +3,7 @@ package nube.tp.pagos;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import nube.tp.pagos.domains.EstadoCuenta;
 import nube.tp.pagos.domains.Pago;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/pagos")
 public class PagosController {
